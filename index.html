@@ -55,7 +55,7 @@
   /* header */
   header{position:sticky;top:0;z-index:50;background:rgba(6,12,22,.85);backdrop-filter:blur(10px);border-bottom:0.5px solid var(--line);}
   .nav{display:flex;align-items:center;justify-content:space-between;padding:14px 24px;max-width:1140px;margin:0 auto;}
-  .brand{display:flex;align-items:center;gap:10px;}
+  .brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:inherit;cursor:pointer;}
   .mtmark{width:28px;height:28px;border:1px solid var(--line-strong);border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:700;color:var(--cyan);}
   .mtlabel{font-size:11px;letter-spacing:.1em;color:var(--text-soft);font-weight:600;}
   .wordmark{display:flex;align-items:center;gap:8px;font-size:17px;font-weight:600;margin-left:8px;}
@@ -190,11 +190,11 @@
 
 <header>
   <div class="nav">
-    <div class="brand">
+    <a class="brand" href="https://mtitservices.net/soluciones/gestion-municipal" title="Volver a MT IT Services">
       <div class="mtmark">M</div>
       <div class="mtlabel">MT IT SERVICES</div>
       <div class="wordmark">Saibot<span class="aipill">AI</span></div>
-    </div>
+    </a>
     <div class="navlinks">
       <a href="#problema">El problema</a>
       <a href="#solucion">Qué es</a>
@@ -203,7 +203,7 @@
       <a href="#metricas">Métricas</a>
     </div>
     <div class="navcta">
-      <a class="btn btn-ghost" href="#piloto">Iniciar sesión</a>
+      <a class="btn btn-ghost" href="https://saibot.mtitservices.net" target="_blank" rel="noopener">Iniciar sesión</a>
       <a class="btn btn-primary" href="#piloto">Pregunta por un piloto →</a>
     </div>
   </div>
@@ -624,7 +624,7 @@
 
 <footer>
   <div class="wrap footer-row">
-    <div class="brand"><div class="mtmark">M</div><div class="mtlabel">MT IT SERVICES</div></div>
-    <div>mtitservices.net · Saibot AI · Plataforma de operaciones y servicios municipales</div>
+    <a class="brand" href="https://mtitservices.net/soluciones/gestion-municipal"><div class="mtmark">M</div><div class="mtlabel">MT IT SERVICES</div></a>
+    <div><a href="https://mtitservices.net/soluciones/gestion-municipal" style="color:inherit;">mtitservices.net</a> · Saibot AI · Plataforma de operaciones y servicios municipales</div>
   </div>
 </footer>
